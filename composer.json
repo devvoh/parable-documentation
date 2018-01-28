@@ -1,0 +1,14 @@
+{
+  "name": "devvoh/parable-documentation",
+  "type": "docs",
+  "description": "Documentation for the Parable PHP Framework",
+  "keywords": ["documentation", "parable"],
+  "homepage": "https://devvoh.com/parable",
+  "authors": [
+    {
+      "name": "Robin de Graaf",
+      "email": "hello@devvoh.com",
+      "homepage": "https://devvoh.com"
+    }
+  ]
+}
