@@ -1,5 +1,3 @@
-<!-- order: 1 -->
-
 ## Installing Parable
 
 Parable can be installed using [Composer](https://getcomposer.org). Simply run the following:

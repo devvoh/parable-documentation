@@ -1,15 +1,14 @@
-<!-- order: 0 -->
-
 ## Introduction to Parable
 
 Parable is a no-nonsense PHP micro-framework, meant to be fast, readable and written in a way where it's not bogging 
 you down with unnecessary rules and limitations. Developed with the goal of building small web applications and REST APIs.
 
-The following are specific design goals for Parable:
-1. Be fast.
-1. Be logical.
-1. Be easy to read and understand.
-1. Be easy to extend.
+## Design goals
+
+If it's useful for many people, put it in. Stick to the basics. Allow everything to be extended and built upon. The simplest
+solution is usually the right one. Bloat is bad. KISS. YAGNI. Abstractions can be good but usually aren't.
+
+Save the complex over-engineering for the implementation.
 
 ## Who made this?
 
@@ -22,9 +21,6 @@ Contributions have from time to time been made by others (i.e. [@jerry1970](http
 
 Of course! Whether you've got a bug fix or a feature you want to implement, contributions are always welcome!
 
-But before you start fixing something or building your feature, check first whether it fits the following contribution guidelines:
+But before you start fixing something or building your feature, check first whether it fits the stated design goals.
 
-1. All features should be interesting for most developers.
-2. All features should be relevant _now_.
-3. All features should be written by following the KISS principle.
-4. Bloat is bad.
+If you're unsure, open an issue instead and ask! Everything is open for discussion.
