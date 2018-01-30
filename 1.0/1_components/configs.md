@@ -1,7 +1,3 @@
-<!--
-title: Configs
--->
-
 ## Configs
 
 Parable's own `\Parable\Framework\Config` class is more of a Config manager than a Config itself. As such, it is an implementation of the [GetSet](getset) component. It does not, in and of itself, contain any configuration values, until they're added from actual Config implementations.
