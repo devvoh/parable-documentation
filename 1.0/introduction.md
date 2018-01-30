@@ -1,3 +1,5 @@
+<!-- order: 0 -->
+
 ## Introduction to Parable
 
 Parable is a no-nonsense PHP micro-framework, meant to be fast, readable and written in a way where it's not bogging 
