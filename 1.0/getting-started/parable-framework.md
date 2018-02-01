@@ -38,6 +38,7 @@ class App implements \Parable\Framework\Interfaces\Config
                     "title" => "Parable",
                     "homedir" => "public",
                 ],
+                "debug" => true,
                 "session" => [
                     "auto-enable" => true,
                 ],

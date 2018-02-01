@@ -24,3 +24,12 @@ Of course! Whether you've got a bug fix or a feature you want to implement, cont
 But before you start fixing something or building your feature, check first whether it fits the stated design goals.
 
 If you're unsure, open an issue instead and ask! Everything is open for discussion.
+
+## This documentation
+
+You can find all the markdown files over on the [Parable Documentation Github repository](https://github.com/devvoh/parable-documentation)
+and you're cordially invited to suggest improvements. It's difficult to determine what needs explaining, and as such,
+when and if Parable users find themselves confused by something, letting me know or suggesting better explanations
+will help everyone.
+
+Thanks in advance!
