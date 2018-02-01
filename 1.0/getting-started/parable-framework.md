@@ -39,6 +39,7 @@ class App implements \Parable\Framework\Interfaces\Config
                     "homedir" => "public",
                 ],
                 "debug" => true,
+                "timezone" => "Europe/Amsterdam",
                 "session" => [
                     "auto-enable" => true,
                 ],
