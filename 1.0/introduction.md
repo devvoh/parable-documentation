@@ -27,6 +27,8 @@ If you're unsure, open an issue instead and ask! Everything is open for discussi
 
 ## This documentation
 
+_This documentation is a work in progress!_
+
 You can find all the markdown files over on the [Parable Documentation Github repository](https://github.com/devvoh/parable-documentation)
 and you're cordially invited to suggest improvements. It's difficult to determine what needs explaining, and as such,
 when and if Parable users find themselves confused by something, letting me know or suggesting better explanations
