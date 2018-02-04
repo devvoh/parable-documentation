@@ -45,10 +45,18 @@ class App implements \Parable\Framework\Interfaces\Config
                 ],
                 "database" => [
                     "type" => \Parable\ORM\Database::TYPE_MYSQL,
-                    "location" => "localhost",
-                    "username" => "username",
-                    "password" => "password",
-                    "database" => "database",
+                    "location"     => "localhost",
+                    "username"     => "username",
+                    "password"     => "password",
+                    "database"     => "database",
+                    "soft-quoting" => true,
+                ],
+                "mail" => [
+                    "sender" => \Parable\Mail\Sender\PhpMail::class,
+                    "from"   => [
+                        "email" => "noreply@localhost",
+                        "name"  => "No Reply",
+                    ],
                 ],
                 "configs" => [
                     \Config\Custom::class
@@ -75,17 +83,21 @@ The following configuration values are automatically picked up by Parable:
 Parameter|Type|Info
 ---------|----|------
 `parable.app.homedir`|string|Where the publicly accessible files and `index.php` can be found.
+`parable.commands`|array|A list of commands to load.
+`parable.configs`|array|A list of additional configs to load.
 `parable.database.type`|string|`\Parable\ORM\Database::TYPE_MYSQL` or `TYPE_SQLITE`
 `parable.database.location`|string|For `TYPE_SQLITE` the location of the database file. For `TYPE_MYSQL` the host.
 `parable.database.username`|string|Only for `TYPE_MYSQL`.
 `parable.database.password`|string|Only for `TYPE_MYSQL`.
 `parable.database.database`|string|Only for `TYPE_MYSQL`.
+`parable.database.soft-quoting`|bool|Whether to allow soft quoting or force the need for a Database instance.
 `parable.debug`|bool|Enable displaying errors, default `false`.
-`parable.session.auto-enable`|string|Enable sessions by default or not. Default `true`.
-`parable.configs`|array|A list of additional configs to load.
-`parable.commands`|array|A list of commands to load.
 `parable.inits`|array|A list of inits to load.
+`parable.mail.sender`|string|The mail sender class to be used.
+`parable.mail.from.email`|string|The email address to send mail as.
+`parable.mail.from.name`|string|The name to send mail as.
 `parable.routes`|array|A list of routes files to load.
+`parable.session.auto-enable`|string|Enable sessions by default or not. Default `true`.
 `parable.timezone`|string|A timezone string in the form of `Europe/Amsterdam` will be set as default.
 
 To get a config value from the Config class, call `$config->get("parable.app");`. The dot-notation (so `parable.app.title`) is a shorthand for getting to nested values. So when this documentation says `parable.app.title`, that's what we're referring to.
