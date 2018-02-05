@@ -26,7 +26,3 @@ Soft quoting can be disabled by setting the `parable.database.soft-quoting` conf
 
 Query supports only the 4 most basic actions: `select`, `insert`, `update` and `delete`. For anything more involved,
 you can either extend Query and add them, or you should do it without the use of Query.
-
-## Table name and key
-
-Every Query requires a `$tableName` so it knows what table to target. `$tableKey`
